@@ -1,5 +1,13 @@
 body {
-    margin-left: 10px;
+    margin: 0px;
+}
+
+.bg-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/static/img/maple.jpg);
+  height: 100vh;
 }
 
 h1 {
@@ -10,4 +18,19 @@ input[type=text] {
   border: 2px solid #dc3545;
   border-radius: 4px;
   color: #dc3545;
+  padding: 3px;
+  padding-bottom: 7px;
+  margin-right: 3px;
+  margin-left: 5px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffeb;
+    width: 500px;
+    height: 400px;
+    border: 2px solid #8B4513;
+    border-radius: 14px;
 }

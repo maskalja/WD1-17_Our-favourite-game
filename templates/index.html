@@ -1,25 +1,24 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
 <html>
 
 <head>
-    <title>The Game</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    {% block title %}
+        <title>The Game</title>
+    {% endblock title%}
 </head>
 
 <body>
-    <h1>Guessing game</h1>
-    <p class="fst-italic">Try to guess the number between 1 and 30.</p>
-    <form method="post" action="/">
-        <input type=text name="player_number" placeholder="Enter your number">
-        <button type="submit" class="btn btn-danger btn-sm">Submit</button>
-    </form>
+    {% block box_content %}
+        <h1>Guessing game</h1>
+        <br>
+        <p class="fst-italic">Try to guess the number between 1 and 30.</p>
 
-
-
-
+        <form method="post" action="/">
+            <input type=text name="player_number" placeholder="Enter your number">
+            <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+    {% endblock box_content %}
 </body>
 
 

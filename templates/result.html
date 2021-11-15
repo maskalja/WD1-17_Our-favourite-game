@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
 <html>
 
 <head>
-    <title>Results</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/css/style.css">
+    {% block title %}
+        <title>Results</title>
+    {% endblock title %}
 </head>
 
 <body>
-    <h1>Guessing game</h1>
-    <h3>Your guess: {{player_number}}</h3>
-
-    <h3>{{feedback}}</h3>
-
-    <form>
-        <button class= "btn btn-danger btn-sm" formaction="/">Play again</button>
-    </form>
-
+    {% block box_content %}
+        <h1>Guessing game</h1>
+        <br>
+        <h3 class="fst-italic">Your guess: {{player_number}}</h3>
+        <p class="fst-italic">{{feedback}}</p>
+        <br>
+        <form>
+            <button class= "btn btn-danger btn-bg" formaction="/">Play again</button>
+        </form>
+    {% endblock box_content %}
 </body>
 
 </html>
